@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GL-SD007 rclone</title>
+  <meta name="description" content="Personal research archive utility for GL-SD007 using Google Drive through rclone.">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; max-width: 760px; margin: 48px auto; padding: 0 20px; line-height: 1.6; color: #1f2937; }
+    h1 { margin-bottom: 0.25rem; }
+    .muted { color: #6b7280; }
+    .card { background: #f8fafc; border: 1px solid #e5e7eb; border-radius: 12px; padding: 18px; margin: 24px 0; }
+    a { color: #2563eb; }
+    code { background: #f1f5f9; padding: 0.1rem 0.35rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>GL-SD007 rclone</h1>
+  <p class="muted">Personal research archive utility</p>
+
+  <p>
+    GL-SD007 rclone is a personal utility used to archive immutable research data
+    from the GL-SD007 project to the project owner's Google Drive.
+  </p>
+
+  <div class="card">
+    <h2>What the app does</h2>
+    <p>
+      The app uses rclone and the Google Drive API to create, read back, verify,
+      and manage archive files created by this app. It is used only for the
+      owner's research-data backup and integrity-verification workflow.
+    </p>
+  </div>
+
+  <h2>Google Drive access</h2>
+  <p>
+    The app requests the <code>drive.file</code> permission. This limits access
+    to Google Drive files created or opened by this app rather than granting
+    general access to all files in the user's Drive.
+  </p>
+
+  <h2>Data handling</h2>
+  <p>
+    Research archive files are stored in the project owner's Google Drive.
+    OAuth credentials and rclone configuration are kept locally on the owner's
+    computer. The app does not sell Google user data or share it with third
+    parties for advertising or marketing.
+  </p>
+
+  <h2>Privacy</h2>
+  <p>
+    See the <a href="./privacy.html">Privacy Policy</a> for details about access,
+    storage, use, retention, and revocation.
+  </p>
+</body>
+</html>
